@@ -21,6 +21,7 @@
 			<ion-icon item-start [name]="p.icon" [color]="isActive(p)"></ion-icon>
 			{{p.title}}
 		</button>
+		<ion-item (click)="logout(email, password)">Logout</ion-item>
 	</ion-list>
 
 </ion-content>
