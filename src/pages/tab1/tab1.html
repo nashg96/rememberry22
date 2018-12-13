@@ -11,12 +11,36 @@
   			<ion-icon name="menu"></ion-icon>
   		</button>
   	</ion-buttons>
-    <ion-title>tab1</ion-title>
+    <ion-title></ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-This is Tab1
+
+    <button class="button roundButton" ion-button (click)="hide()"><span>Memory</span></button>
+      
+      <div *ngIf="hideMe">
+
+          <button class="button roundButton" ion-button (click)="hide1()">Understanding <br> Memory</button>
+          <p>
+          </p>
+         
+
+              <div *ngIf="hideMe1">
+
+                <ion-slides pager = "true">
+                  <ion-slide *ngFor="let slide of slider">
+                   <h2 [innerHTML]="slide.title"></h2>
+                    <p [innerHTML]="slide.description"></p>
+                  </ion-slide>
+                </ion-slides>
+              </div>  
+
+
+    
+
+      </div>
+
 </ion-content>

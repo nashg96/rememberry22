@@ -22,4 +22,38 @@ export class Tab1Page {
     console.log('ionViewDidLoad Tab1Page');
   }
 
+  slider = [
+  {
+  	title: 'Start',
+  	description: 'description alkjdlkasdlkajskldjklasjdkljakldsjklajdklsj'
+  },
+  {
+  	title: 'flesh',
+  	description: 'description'
+  },
+  {
+  	title: 'finsih',
+  	description: 'description'
+  	}
+  ];
+
+
+  hide() {
+  	if(this.hideMe == true){
+  		this.hideMe = false;
+  	}else{
+ 		 this.hideMe = true;
+  	}
+  }
+
+  hide1() {
+  	if(this.hideMe1 == true){
+  		this.hideMe1 = false;
+  	}else{
+ 		 this.hideMe1 = true;
+  	}
+  }
+  
+
+
 }
