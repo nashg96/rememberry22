@@ -6,13 +6,13 @@
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 16px;
+	font-size: 10px;
 	margin: 4px 2px;
 }
 
 .roundButton {
-	border-radius: 200%;
-	padding: 20px 20px;
+	border-radius: 150%;
+	padding: 25px 10px;
 
 }
 
@@ -45,3 +45,9 @@ p {
 margin-bottom: 50px;
 padding-bottom: 50px;
 }
+
+.floated {
+   float:left;
+   margin-right:5px;
+}
+

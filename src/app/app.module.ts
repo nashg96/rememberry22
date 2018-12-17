@@ -14,6 +14,7 @@ import{FIREBASE_CONFIG} from './firebase.credentials';
 import { MyApp } from './app.component';
 import { MenuPage } from '../pages/menu/menu';
 import {LoginPage} from '../pages/login/login';
+import { NamedProvider } from '../providers/named/named';
 
 
 @NgModule({
@@ -35,7 +36,9 @@ import {LoginPage} from '../pages/login/login';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    AngularFireAuth
+    AngularFireAuth,
+    NamedProvider,
+    NamedProvider
   ]
 })
 export class AppModule {}

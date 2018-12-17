@@ -22,4 +22,8 @@ export class Tab2Page {
     console.log('ionViewDidLoad Tab2Page');
   }
 
+
+  goToCalender(){
+  	this.navCtrl.push("CalenderPage");
+  }
 }

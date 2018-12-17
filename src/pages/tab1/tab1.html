@@ -19,27 +19,37 @@
 
 <ion-content padding>
 
-    <button class="button roundButton" ion-button (click)="hide()"><span>Memory</span></button>
+    <button class="button roundButton " ion-button (click)="hide()"><span>Memory</span></button>
       
-      <div *ngIf="hideMe">
+      <div class="row" *ngIf="hideMe">
 
-          <button class="button roundButton" ion-button (click)="hide1()">Understanding <br> Memory</button>
-          <p>
-          </p>
+          <button class="roundButton" ion-button (click)="hide1()">Understanding <br> Memory</button>
+      
+          <button class="roundButton" ion-button (click)="hide2()">Attention</button>      
          
 
-              <div *ngIf="hideMe1">
+
+             <div *ngIf="hideMe1">
 
                 <ion-slides pager = "true">
                   <ion-slide *ngFor="let slide of slider">
+                    <img [src]="slide.image"/> 
                    <h2 [innerHTML]="slide.title"></h2>
                     <p [innerHTML]="slide.description"></p>
                   </ion-slide>
                 </ion-slides>
               </div>  
 
+              <div *ngIf="hideMe2">
 
-    
+                <ion-slides pager = "true">
+                  <ion-slide *ngFor="let slide of slider2">
+                    <img [src]="slide.image"/> 
+                   <h2 [innerHTML]="slide.title"></h2>
+                    <p [innerHTML]="slide.description"></p>
+                  </ion-slide>
+                </ion-slides>
+              </div>  
 
       </div>
 
