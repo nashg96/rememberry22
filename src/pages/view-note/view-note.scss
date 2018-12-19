@@ -1,6 +1,6 @@
-page-tab2 {
-   ion-content {
-        background: url(../assets/imgs/bg-1.jpeg) no-repeat center fixed;
+page-view-note {
+    ion-content {
+        background: url(../assets/imgs/bg-3.jpg) no-repeat center fixed;
         background-size: cover;
         &:before {
             content: '';
@@ -10,14 +10,13 @@ page-tab2 {
             bottom: 0;
             left: 0;
             background-image: linear-gradient(to bottom right,#02362C,#003199);
-            opacity: .3; 
+            opacity: .6; 
         }
     }
 
-    .date {
-        font-weight: bold;
-        color: #888;
-        padding-right: 24px;
+    .note-date{
         font-size: 0.8em;
+        color: #888;
+        margin-bottom: 12px;
     }
 }

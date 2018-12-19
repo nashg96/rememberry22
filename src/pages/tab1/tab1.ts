@@ -20,7 +20,7 @@ export class Tab1Page {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad Tab1Page');
-  }
+  } 
 
   slider = [
   {
@@ -60,30 +60,30 @@ export class Tab1Page {
 
 
   hide() {
-  	if(this.hideMe == true){
-  		  this.hideMe = false;
+  	if(this.show == true){
+  		  this.show = false;
   	}else{
- 		    this.hideMe = true;
+ 		    this.show = true;
   	}
   }
 
   hide1() {
-  	if(this.hideMe1 == true){
-  		this.hideMe1 = false;
-      this.hideMe2 = false;
+  	if(this.show1 == true){
+  		this.show1 = false;
+      this.show2 = false;
   	}else{
- 		 this.hideMe1 = true;
-      this.hideMe2 = false;
+ 		 this.show1 = true;
+      this.show2 = false;
   	}
   }
 
   hide2() {
-    if(this.hideMe2 == true){
-      this.hideMe2 = false;
-      this.hideMe1 = false;
+    if(this.show2 == true){
+      this.show2 = false;
+      this.show1 = false;
     }else{
-     this.hideMe2 = true;
-     this.hideMe1 = false;
+     this.show2 = true;
+     this.show1 = false;
     }
   }
   

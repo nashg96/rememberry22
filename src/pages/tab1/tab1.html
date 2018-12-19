@@ -1,9 +1,4 @@
-<!--
-  Generated template for the Tab1Page page.
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
   	<ion-navbar>
   			<ion-buttons start>
@@ -19,9 +14,9 @@
 
 <ion-content padding>
 
-    <button class="button roundButton " ion-button (click)="hide()"><span>Memory</span></button>
+    <button class="floated button roundButton " ion-button (click)="hide()"><span>Memory</span></button>
       
-      <div class="row" *ngIf="hideMe">
+      <div class="row" *ngIf="show">
 
           <button class="roundButton" ion-button (click)="hide1()">Understanding <br> Memory</button>
       
@@ -29,7 +24,7 @@
          
 
 
-             <div *ngIf="hideMe1">
+             <div *ngIf="show1">
 
                 <ion-slides pager = "true">
                   <ion-slide *ngFor="let slide of slider">
@@ -40,7 +35,7 @@
                 </ion-slides>
               </div>  
 
-              <div *ngIf="hideMe2">
+              <div *ngIf="show2">
 
                 <ion-slides pager = "true">
                   <ion-slide *ngFor="let slide of slider2">

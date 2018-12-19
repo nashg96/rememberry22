@@ -27,6 +27,7 @@
     "angular-calendar": "^0.26.4",
     "angular-calendar-week-hours-view": "^1.0.2",
     "angularfire2": "^5.1.1",
+    "cordova-sqlite-storage": "2.5.2",
     "firebase": "^5.7.0",
     "intl": "^1.2.5",
     "ionic-angular": "3.9.2",
@@ -44,5 +45,10 @@
     "@ionic/lab": "1.0.15",
     "typescript": "~2.6.2"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "cordova": {
+    "plugins": {
+      "cordova-sqlite-storage": {}
+    }
+  }
 }
