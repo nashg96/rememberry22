@@ -42,19 +42,30 @@ export class Tab1Page {
 
   slider2 = [
   {
-    title: 'Memory is a process',
-    description: '',
-    image: "assets/imgs/Diagram1.png"
+    title: 'Attention',
+    description: 'Attention is the basis of all new learning<br>It generally explains our ability to focus and hold attention of words on a page, music, a conversation.<br>Attention helps us to select specific informationand decide what is important and what is not ',
+    image: "assets/imgs/attention1.jpg"
   },
   {
-    title: 'Different aspects of Memory',
+    image: "assets/imgs/attention2.png",
+    title: 'Types of Attention',
     description: '',
-     image: "assets/imgs/diagram2.png"
+     
   },
   {
     title: '',
     description: '',
-    image: "assets/imgs/diagram3.png"
+    image: "assets/imgs/attention3.png"
+    },
+  {
+    title: '',
+    description: '',
+    image: "assets/imgs/attention4.png"
+    },
+  {
+    title: '',
+    description: '',
+    image: "assets/imgs/attention5.png"
     }
   ];
 
