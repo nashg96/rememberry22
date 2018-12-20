@@ -5,18 +5,79 @@
   Ionic pages and navigation.
 -->
 <ion-header>
+  <p></p>
   	<ion-navbar>
   			<ion-buttons start>
   		<button ion-button menuToggle>
   			<ion-icon name="menu"></ion-icon>
   		</button>
   	</ion-buttons>
-    <ion-title>Special</ion-title>
+    <ion-title>Attention Survey</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-This is special
+
+<ion-item>
+  <ion-label>Am I slower at processing <br> information and therefore<br> dont take everything in?</ion-label>
+  <ion-select [(ngModel)]="question1">
+    <ion-option value="y">Yes</ion-option>
+    <ion-option value="n">No</ion-option>
+  </ion-select>
+</ion-item>
+
+ <p></p>
+
+<ion-item>
+  <ion-label>Are you easily distracted?</ion-label>
+  <ion-select [(ngModel)]="question2">
+    <ion-option value="y">Yes</ion-option>
+    <ion-option value="n">No</ion-option>
+  </ion-select>
+</ion-item>
+
+ <p></p>
+
+<ion-item>
+  <ion-label>Is it hard for you to fiter <br>out background noises?</ion-label>
+  <ion-select [(ngModel)]="question3">
+    <ion-option value="y">Yes</ion-option>
+    <ion-option value="n">No</ion-option>
+  </ion-select>
+</ion-item>
+
+ <p></p>
+
+<ion-item>
+  <ion-label>Is it hard for you to multitask?</ion-label>
+  <ion-select [(ngModel)]="question4">
+    <ion-option value="y">Yes</ion-option>
+    <ion-option value="n">No</ion-option>
+  </ion-select>
+</ion-item>
+
+ <p></p>
+
+<ion-item>
+  <ion-label>Is it hard for you to concentrate<br> for large periods of time?</ion-label>
+  <ion-select [(ngModel)]="question5">
+    <ion-option value="y">Yes</ion-option>
+    <ion-option value="n">No</ion-option>
+  </ion-select>
+</ion-item>
+
+ <p></p>
+
+<ion-item>
+  <ion-label>Is it hard for you to switch <br> attention from one thing<br> to the other?</ion-label>
+  <ion-select [(ngModel)]="question6">
+    <ion-option value="y">Yes</ion-option>
+    <ion-option value="n">No</ion-option>
+  </ion-select>
+</ion-item>
+
+<button ion-button (click)="goBack()">Submit</button>
+
 </ion-content>

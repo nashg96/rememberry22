@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+
 /**
  * Generated class for the Tab1Page page.
  *
@@ -15,7 +16,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class Tab1Page {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) { 
   }
 
   ionViewDidLoad() {
@@ -25,17 +26,17 @@ export class Tab1Page {
   slider = [
   {
   	title: 'Memory is a process',
-  	description: 'Attention - Paying attention to information<br>Encoding - taking in the information<br>Storage - Storing information<br>Consolidation - practice/rehearsing<br>Retrieval - Being able to get  back the stored information',
+  	description: '<b>Attention</b> - Paying attention to <br> information<br><b>Encoding</b> - Taking in the information<br><b>Storage</b> - Storing information<br><b>Consolidation</b> - Practice/Rehearsing<br><b>Retrieval</b> - Being able to get back <br>the stored information',
     image: "assets/imgs/Diagram1.png"
   },
   {
   	title: 'Different aspects of Memory',
-  	description: 'Immediate - Information is held for a brief time in the memory<br>Short term - Information is stored for long enough to be used<br>Long term - A mememory of epsiodes of things that have happened to you in the past<br>Prospective - The ability to remember things for the future',
+  	description: '<b>Immediate</b> - Information is held <br> for a brief time in the memory<br><b>Short term</b> - Information is stored for<br> long enough to be used<br><b>Long term</b> - A memory of epsiodes of<br> things that have happened to you <br>in the past<br><b>Prospective</b> - The ability to remember<br> things for the future',
      image: "assets/imgs/diagram2.png"
   },
   {
   	title: '',
-  	description: 'Auditory - Remebering events using words e.g. remebering a story<br>Visual - Remebering pictures or images<br>Motor - Remembering a partcicular motor skill e.g. walking<br>Procedrual - Remenbering a procedure e.g. riding a bike',
+  	description: '<b>Auditory</b> - Remebering events using words <br> e.g. remebering a story<br><b>Visual</b> - Remebering pictures or images<br><b>Motor</b> - Remembering a partcicular motor <br>skill e.g. walking<br><b>Procedrual</b> - Remenbering a procedure <br>e.g. riding a bike',
     image: "assets/imgs/diagram3.png"
   	}
   ];
@@ -98,6 +99,9 @@ export class Tab1Page {
     }
   }
   
+  goToAttentionSurv(){
+    this.navCtrl.push('SpecialPage');
+  }
 
 
 }

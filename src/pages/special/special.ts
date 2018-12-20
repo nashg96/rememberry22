@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { AngularFireDatabase} from 'angularfire2/database';
+
 /**
  * Generated class for the SpecialPage page.
  *
@@ -15,11 +17,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class SpecialPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, private fdb: AngularFireDatabase) {
+
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SpecialPage');
+  }
+
+  goBack(){
+  	this.navCtrl.pop();
   }
 
 }

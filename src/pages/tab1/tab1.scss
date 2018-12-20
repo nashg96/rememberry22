@@ -8,13 +8,14 @@
 	display: inline-block;
 	font-size: 10px;
 	margin: 4px 2px;
+  horizontal-align: bottom;
 }
 
 .roundButton {
 	border-radius: 150%;
 	padding: 25px 10px;
-
 }
+
 
 .button span {
   cursor: pointer;
@@ -42,12 +43,11 @@
 }
 
 p {
-margin-bottom: 50px;
-padding-bottom: 50px;
+margin-bottom: 3px;
+padding-bottom: 3px;
 }
 
 .floated {
   
    margin-right:5px;
 }
-

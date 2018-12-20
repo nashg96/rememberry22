@@ -1,11 +1,11 @@
-
 <ion-header>
-  	<ion-navbar>
-  			<ion-buttons start>
-  		<button ion-button menuToggle>
-  			<ion-icon name="menu"></ion-icon>
-  		</button>
-  	</ion-buttons>
+  <p></p>
+    <ion-navbar>
+        <ion-buttons start>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
     <ion-title></ion-title>
   </ion-navbar>
 
@@ -28,8 +28,8 @@
 
                 <ion-slides pager = "true">
                   <ion-slide *ngFor="let slide of slider">
+                     <h2 [innerHTML]="slide.title"></h2>
                     <img [src]="slide.image"/> 
-                   <h2 [innerHTML]="slide.title"></h2>
                     <p [innerHTML]="slide.description"></p>
                   </ion-slide>
                 </ion-slides>
@@ -44,6 +44,7 @@
                     <p [innerHTML]="slide.description"></p>
                   </ion-slide>
                 </ion-slides>
+                 <button class="roundButton" ion-button (click)="goToAttentionSurv()">Try this Attention Survey</button>
               </div>  
 
       </div>
